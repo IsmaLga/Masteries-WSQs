@@ -12,37 +12,7 @@ def gcd(x,y):
     elif x==y:
         return x
 
-print("this program will calculate the greates common divisor of two numbers")
-r="yes"
-while r=="yes":
-    while True:
-        try:
-            a=int(input("please enter the first positive integer number: "))
-            break
-        except ValueError:
-            print("sorry that is not a positive integer number,try again")
-    while a<0:
-        while True:
-            try:
-                a=int(input("please enter the first positive integer number: "))
-                break
-            except ValueError:
-                print("sorry that is not a positive integer number,try again")
-    while True:
-        try:
-            b=int(input("please enter the second positive integer number: "))
-            break
-        except ValueError:
-            print("sorry that is not a positive intefer number,try again")
-    while b<0:
-        while True:
-            try:
-                b=int(input("please enter the first positive integer number: "))
-                break
-            except ValueError:
-                print("sorry that is not a positive integer number,try again")
-    c=gcd(a,b)
-    print("the greates common divisor of %s and %s is: %s"%(a,b,c))
-    r=input("would you like to try with others numbers? yes or no: ")
-    while r!="yes" and r!="no":
-        r=input("that is not an option,try again(yes or no)")
+print("Este programa calculará el máximo común divisor de dos números")
+x = int(input("Ingresa el primer número. Por favor, ingresa un número positivo"))
+y = int(input("Ingresa el segundo número. Por favor, ingresa un número positivo"))
+print ("El máximo común divisor de los dos números es", gcd(x,y))
