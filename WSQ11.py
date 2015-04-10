@@ -3,13 +3,10 @@ def inverse(x):
     x=x[::-1]
     x=int(x)
     return x
-
 numbers=[]
 lychrel=[]
-
 x=int(input("Input the lower bound: "))
 x1=int(input("Input the upper bound"))
-
 print ("The range of numbers analyzed goes from %s to %s" %(x,x1))
 for i in range(x1-x+1):
     numbers.append(x)
@@ -34,10 +31,11 @@ for i in numbers:
                 if i1==29:
                     b=b+1
                     lychrel.append(i)
-print("Number of natural palindromes is: %s"%(a))
-print("Number of non-lychrel numbers is: %s"%(ab))
-print("Number of lychrel number candidates is: %s"%(b))
+print("Number of natural palindromes is: ",a)
+print("Number of non-lychrel numbers is: ",ab)
+print("Number of lychrel number candidates is: ",b)
 if b!= 0:
     print ("found lychrel numbers: ")
     print (lychrel)
+
     
