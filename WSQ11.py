@@ -3,13 +3,12 @@ def inverse(x):
     x=x[::-1]
     x=int(x)
     return x
-print("Calculating whether each value is one of: palidrome, non-lychrel or lychre candidate")
 
 numbers=[]
 lychrel=[]
 
-x=int(input("Give the lower bound of numbers to consider: "))
-x1=int(input("Give the upper bound of numbers to consider: "))
+x=int(input("Input the lower bound: "))
+x1=int(input("Input the upper bound"))
 
 print ("The range of numbers analyzed goes from %s to %s" %(x,x1))
 for i in range(x1-x+1):
@@ -35,9 +34,10 @@ for i in numbers:
                 if i1==29:
                     b=b+1
                     lychrel.append(i)
-print("the number of natural palindromes is: %s"%(a))
-print("the number of non-lychrel numbers is: %s"%(ab))
-print("the number of lychrel number candidates is: %s"%(b))
+print("Number of natural palindromes is: %s"%(a))
+print("Number of non-lychrel numbers is: %s"%(ab))
+print("Number of lychrel number candidates is: %s"%(b))
 if b!= 0:
     print ("found lychrel numbers: ")
     print (lychrel)
+    
