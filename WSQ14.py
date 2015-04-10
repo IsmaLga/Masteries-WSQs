@@ -1,7 +1,11 @@
 def calculate_e(precision):
- n=precision
- e=(1+1/n)**n
- return (e)
-precision=int(input("Cuantos decimales necesitas? -> "))
-respuesta= calculate_e
-print("el numero e, con los decimales",precision," es: ",respuesta)
+	sum = 1
+	y=0
+	z=1
+	x = 0
+	while (x<precision):
+		x=x+1
+		y=1/(x*z)
+		sum = sum+y
+		z=x*z
+	return sum
